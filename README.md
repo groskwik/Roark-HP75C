@@ -76,7 +76,7 @@ Read the documentation here: http://www.jeffcalc.hp41.eu/emu75/files/emu75eng.pd
 ```bas
         ASSIGN #1 to *
 ```
-5. The text file is now in the emulated HP-71B file system, as a proper HP-71B TEXT file, with the name you chose. You can now transform it to a BASIC program by executing from the keyboard (replace ROARK with the name you chose before):
+5. The text file is now in the emulated HP-71B file system, as a proper HP-75C/D TEXT file, with the name you chose. You can now transform it to a BASIC program by executing from the keyboard (replace ROARK with the name you chose before):
 ```bas
          TRANSFORM "ROARK" INTO BASIC
 ```
