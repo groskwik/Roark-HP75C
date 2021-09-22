@@ -1,0 +1,13 @@
+10 DIM A$[120]
+20 DELAY .1
+30 INPUT 'filename? ';F$
+35 EDIT F$,TEXT
+40 ASSIGN # 1 TO F$
+50 ENTER ':I1' ; A$
+60 DISP A$
+70 IF A$[1,5]="*EOF*" THEN GOTO 100
+80 PRINT # 1,VAL(A$[1,3]) ; A$[5]
+90 GOTO 50
+100 ASSIGN # 1 TO *
+110 DISP "Import is complete"
+120 END
