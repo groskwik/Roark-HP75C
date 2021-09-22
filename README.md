@@ -25,26 +25,9 @@ The program computes:
 - The moment along the beam for a given range
 - The shear force along the beam for a given range
 
-## Computation of a single value
-Once the program as ran one time, it is possible to compute a single value on any location of the beam.
-Examples:
-* Case 1 (a through f). Computes the Shear Force at location x=10.2:
- ```bas
-         FNV1(10.2)
-```      
-* Same for respectively Slope, Moment and Deflection:
- ```bas
-         FNT1(10.2)
-         FNM1(10.2)   
-         FNY1(10.2)
-```      
-* Case 2 (a through f). Same as above but the function name ends with "2":
- ```bas
-         FNV2(10.2)
-```      
 ## Requirements
 This program uses the Math Rom. The module shall be properly installed on your calculator.
-If you follow the instruction below for installation, you will also need the Math Rom installed in EMU71.
+If you follow the instruction below for installation, you will also need the Math Rom installed in EMU75.
 See EMU71 help for how to install the Rom into the emulator.
 
 ## Installation
@@ -74,9 +57,9 @@ Read the documentation here: http://www.jeffcalc.hp41.eu/emu75/files/emu75eng.pd
 3. Run the program in EMU75. The program prompts for a name. It will be the name of the ROARK program in EMU71.
 4. Close the file by executing from the keyboard:
 ```bas
-        ASSIGN #1 to *
+        clear ":i1"
 ```
-5. The text file is now in the emulated HP-71B file system, as a proper HP-75C/D TEXT file, with the name you chose. You can now transform it to a BASIC program by executing from the keyboard (replace ROARK with the name you chose before):
+5. The text file is now in the emulated HP-75c/d file system, as a proper HP-75C/D TEXT file, with the name you chose. You can now transform it to a BASIC program by executing from the keyboard (replace ROARK with the name you chose before):
 ```bas
          TRANSFORM "ROARK" INTO BASIC
 ```
@@ -84,7 +67,7 @@ Read the documentation here: http://www.jeffcalc.hp41.eu/emu75/files/emu75eng.pd
 ```bas
          COPY "ROARK" TO ":M1"
 ```
-7. The file HDRIVE1.dat is now able to be used to transfer directly its content with the PILBOX. Go to your ILPER folder and replace the HDRIVE1.dat file from ILPER with the one from EMU75 (backup the old one before if needed). Connect you HP-75c/D to the PILBOX, run ILPER, and execute the following command on your (real) HP-75C/D:
+7. The file HDRIVE1.dat is now able to be used to transfer directly its content with the PILBOX. Go to your ILPER folder and replace the HDRIVE1.dat file from ILPER with the one from EMU75 (backup the old one before if needed). Connect you HP-75C/D to the PILBOX, run ILPER, and execute the following command on your (real) HP-75C/D:
 ```bas
          COPY "ROARK:M1" to "ROARK"
 ```
