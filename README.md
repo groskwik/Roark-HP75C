@@ -65,7 +65,7 @@ Read the documentation here: http://www.jeffcalc.hp41.eu/emu75/files/emu75eng.pd
 50 ENTER ':I1' ; A$
 60 DISP A$
 70 IF A$[1,5]="*EOF*" THEN GOTO 100
-80 PRINT # 1 ; A$
+80 PRINT # 1,VAL(A$[1,3]) ; A$[5]
 90 GOTO 50
 100 ASSIGN # 1 TO *
 110 DISP "Import is complete"
@@ -90,6 +90,7 @@ Read the documentation here: http://www.jeffcalc.hp41.eu/emu75/files/emu75eng.pd
 ```
 8. You can also copy the file from EMU75 to a regular windows text file with the following program:
 ```bas
+05 PWIDTH 94
 10 ENDLINE CHR$(13)&CHR$(10)
 20 PRINTER IS ":I1"
 30 INPUT "FILENAME? ";F$
