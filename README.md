@@ -35,6 +35,7 @@ There are several methods to copy the program to the HP-75C/D Calculator.
 The description below is derived from http://www.namirshammas.com/HP71B/EMU71.htm and https://groups.io/g/hp75/topic/28780206?p=Created,,,20,2,0,0::,,,0,0,0,28780206
 
 First, get EMU75 here: http://www.jeffcalc.hp41.eu/emu75/
+
 Read the documentation here: http://www.jeffcalc.hp41.eu/emu75/files/emu75eng.pdf
 
 1. Copy the code, renaming it to emu_in.dat, to Emu75's home directory.
@@ -80,9 +81,8 @@ Read the documentation here: http://www.jeffcalc.hp41.eu/emu75/files/emu75eng.pd
 40 PLIST F$
 50 PRINTER IS *
 ```
-You'll find a PC text file named "emu_out.dat" in Emu71's home directory.
+You'll find a PC text file named "emu_out.dat" in Emu75's home directory.
          
 ## Thanks
 
 Many thanks to Jean-Francois Garnier, Christoph Giesselink, Namir Shammas, Robert Prosperi and Valentin Albillo.
-
