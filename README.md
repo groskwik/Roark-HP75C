@@ -68,9 +68,10 @@ Read the documentation here: http://www.jeffcalc.hp41.eu/emu75/files/emu75eng.pd
 ```bas
          COPY "ROARK" TO ":M1"
 ```
-7. The file HDRIVE1.dat is now able to be used to transfer directly its content with the PILBOX. Go to your ILPER folder and replace the HDRIVE1.dat file from ILPER with the one from EMU75 (backup the old one before if needed). Connect you HP-75C/D to the PILBOX, run ILPER, and execute the following command on your (real) HP-75C/D:
+7. The file HDRIVE1.dat is now able to be used to transfer directly its content with the PILBOX. Go to your ILPER folder and replace the HDRIVE1.dat file from ILPER with the one from EMU75 (backup the old one before if needed). Connect you HP-75C/D to the PILBOX, run ILPER, and execute the following commands on your (real) HP-75C/D:
 ```bas
-         COPY "ROARK:M1" to "ROARK"
+         ASSIGN IO ":P1,:M1,:M2,:I1"
+         COPY "ROARK:M2" to "ROARK"
 ```
 8. You can also copy the file from EMU75 to a regular windows text file with the following program:
 ```bas
