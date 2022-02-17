@@ -4,7 +4,7 @@ http://materiales.azc.uam.mx/gjl/Clases/MA10_I/Roark%27s%20formulas%20for%20stre
 
 ## Purpose
 
-This program computes the Shear, Moment, Slope, and deflection for Elastic Straight Beams as defined in Table 8.1 of Roarks's Formula for Stress and Strain.
+This program computes the shear, moment, slope, and deflection for Elastic Straight Beams as defined in Table 8.1 of Roarks's Formula for Stress and Strain.
 The following cases are implemented:
 
 * Concentrated intermediate load: Case 1a to 1f are implemented
