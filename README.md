@@ -82,6 +82,11 @@ Read the documentation here: http://www.jeffcalc.hp41.eu/emu75/files/emu75eng.pd
 40 PLIST F$
 50 PRINTER IS *
 ```
+9. Close the file by executing from the keyboard:
+```bas
+CLEAR :DOSLINK 
+```
+
 You'll find a PC text file named "emu_out.dat" in Emu75's home directory.
          
 ## Thanks
