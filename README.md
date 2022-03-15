@@ -84,7 +84,7 @@ Read the documentation here: http://www.jeffcalc.hp41.eu/emu75/files/emu75eng.pd
 ```
 9. Close the file by executing from the keyboard:
 ```bas
-CLEAR :DOSLINK 
+CLEAR ":I1"
 ```
 
 You'll find a PC text file named "emu_out.dat" in Emu75's home directory.
