@@ -1,6 +1,6 @@
-# Roark for HP-75C/D Computer
+# Roark's Formula for HP-75C/D Computer
 Roarks's Formula for Stress and Strain for Hewlett Packard HP 75C/D Computer
-http://materiales.azc.uam.mx/gjl/Clases/MA10_I/Roark%27s%20formulas%20for%20stress%20and%20strain.pdf
+
 
 ## Purpose
 
@@ -10,10 +10,41 @@ The following cases are implemented:
 * Concentrated intermediate load: Case 1a to 1f are implemented
 * Partial distributed load: Case 2a to 2f are implemented
 
-## Usage
-The program asks for the inputs. The variable names are the same as defined in the Roark's. See demo below:
+## Features
+
+- **User Inputs**: Prompts for beam length (L), load positions (a), modulus of elasticity (E), moment of inertia (I), applied loads (W), and step size for calculations (Step).
+- **Case Selection**: Allows selection from various loading cases (e.g., concentrated load at free end, uniform load over entire length) using a case identifier (e.g., "1A", "2B").
+- **Calculations**: Computes reactions at supports, maximal moments, shear forces, and deflections along the beam.
+- **Output**: Displays results in a structured format, including reactions at supports and maximal values of moments and deflections.
+
+## Usage Instructions
+
+1. **Start the Program**: Load and run the program on the HP-75.
+2. **Input Parameters**: When prompted, enter the following:
+   - **Case**: Enter the case identifier (e.g., "1A", "2B") corresponding to the loading scenario.
+   - **L (Length)**: Total length of the beam.
+   - **a (Position)**: Position of the applied load or start of the distributed load.
+   - **E (Modulus of Elasticity)**: Young's modulus of the beam material.
+   - **I (Moment of Inertia)**: Moment of inertia of the beam's cross-sectional area.
+   - **W (Load)**: Magnitude of the applied load (for certain cases).
+   - **wa (Start Load Intensity)**: Intensity of the distributed load at the start position (for certain cases).
+   - **wl (End Load Intensity)**: Intensity of the distributed load at the end position (for certain cases).
+   - **Step**: Interval for calculating and displaying results along the beam length.
+3. **View Results**: The program will display:
+   - Reactions at supports (RA, RB).
+   - Moments at supports (MA, MB).
+   - Maximal values of moments and deflections along the beam.
+   - Tabulated deflection, moment, and shear force values at specified intervals along the beam.
+
+ See demo below:
 
 ![](demo.gif)
+
+## Notes
+
+- Ensure that the case identifier corresponds to the desired loading scenario as per Roark's Formulas.
+- Input values should be in consistent units to maintain accuracy.
+- The program uses numerical methods to find roots and evaluate functions, ensuring precise calculations for various beam configurations.
 
 ## Outputs
 The program computes:
@@ -28,7 +59,7 @@ The program computes:
 ## Requirements
 This program uses the Math Rom. The module shall be properly installed on your calculator.
 If you follow the instruction below for installation, you will also need the Math Rom installed in EMU75.
-See EMU71 help for how to install the Rom into the emulator.
+See EMU75 help for how to install the Rom into the emulator.
 
 ## Installation
 There are several methods to copy the program to the HP-75C/D Calculator.
@@ -92,3 +123,10 @@ You'll find a PC text file named "emu_out.dat" in Emu75's home directory.
 ## Thanks
 
 Many thanks to Jean-Francois Garnier, Christoph Giesselink, Namir Shammas, Robert Prosperi and Valentin Albillo.
+
+## References
+
+- Roark, R.J., Young, W.C., Budynas, R.G., & Sadegh, A.M. (2020). *Roark's Formulas for Stress and Strain* (9th ed.). McGraw-Hill Education.
+http://materiales.azc.uam.mx/gjl/Clases/MA10_I/Roark%27s%20formulas%20for%20stress%20and%20strain.pdf
+- HP-75 Reference Manual https://literature.hpcalc.org/items/1073
+- HP-75 Owener Manual. https://literature.hpcalc.org/items/1072
